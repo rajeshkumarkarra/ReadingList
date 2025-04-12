@@ -33,7 +33,7 @@
 
 </body>
 </html
--->
+
 
 
 
@@ -69,6 +69,53 @@
     </div>
 
     <p>More content below the document...</p>
+
+    </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading List</title> <link rel="stylesheet" href="assets/css/style.css"> <style>
+        /* CSS specifically for the embedded Google Doc iframe */
+        .google-doc-iframe {
+            width: 100%;        /* Make the iframe take the full width of its parent container */
+            max-width: 850px;   /* Optional: Set a maximum width if you don't want it too wide on large screens. Adjust as needed. */
+            height: 75vh;       /* Set height relative to viewport height (adjust as needed), or use pixels e.g., height: 600px; */
+            border: none;       /* Remove the default iframe border */
+            display: block;     /* Helps prevent extra spacing issues */
+            margin-top: 20px;   /* Optional: Add some space above the iframe */
+            margin-bottom: 20px;/* Optional: Add some space below the iframe */
+            margin-left: auto;  /* Center the iframe within its container if max-width is applied */
+            margin-right: auto; /* Center the iframe within its container if max-width is applied */
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Reading List</h1>
+    </header>
+
+    <main>
+        <p>Here is the embedded reading list:</p>
+
+        <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vQOaOw2IiKlA0WskpZBjU47ekZsYEd2Fhu-KM8_fRzt0TwMxUcdCFsgrjjj5QsVfoYM3CXBM7T-nkSC/pub?embedded=true"
+            class="google-doc-iframe"
+            allowfullscreen>
+        </iframe>
+
+        <p>Other content below the document...</p>
+        </main>
+
+    <footer>
+        </footer>
 
     </body>
 </html>
