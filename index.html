@@ -1,46 +1,40 @@
-<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reading List</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    .iframe-container {
+      flex: 1;
+      width: 100%;
+    }
+
     iframe {
       width: 100%;
-      height: 800px;
-      border: none;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Reading List</h1>
-
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQOaOw2IiKlA0WskpZBjU47ekZsYEd2Fhu-KM8_fRzt0TwMxUcdCFsgrjjj5QsVfoYM3CXBM7T-nkSC/pub?embedded=true"></iframe>
-
-</body>
-</html>
-
-<!--
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsive design -->
-  <title>Reading List</title>
-  <style>
-    /* Make iframe responsive */
-    iframe {
-      width: 100%;  /* Full width */
-      height: 100vh; /* Full viewport height */
-      border: none;
-    }
-
-    /* Ensure body takes full height to fill the viewport */
-    body {
-      margin: 0;
       height: 100%;
+      border: none;
+      display: block;
     }
   </style>
 </head>
@@ -48,9 +42,12 @@
 
   <h1>Reading List</h1>
 
-  <!-- Replace the src with your Google Doc embed URL -->
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQOaOw2IiKlA0WskpZBjU47ekZsYEd2Fhu-KM8_fRzt0TwMxUcdCFsgrjjj5QsVfoYM3CXBM7T-nkSC/pub?embedded=true"></iframe>
+  <div class="iframe-container">
+    <iframe 
+      src="https://docs.google.com/document/d/e/2PACX-1vQOaOw2IiKlA0WskpZBjU47ekZsYEd2Fhu-KM8_fRzt0TwMxUcdCFsgrjjj5QsVfoYM3CXBM7T-nkSC/pub?embedded=true" 
+      title="Reading List">
+    </iframe>
+  </div>
 
 </body>
 </html>
--->
